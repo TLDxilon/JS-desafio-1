@@ -1,21 +1,22 @@
-let numeroPremiado = parseInt(prompt("Sorteo!! Ingresar un número del 1 al 10"));
+// let numero = parseInt(prompt("Sorteo!! Ingresar un número del 1 al 10"));
 
-switch(numeroPremiado){
-  case 1:
-  case 2:  
-  case 3:  
-  case 4:  
-  case 5:  
-  case 6:
-  case 7:
-  case 8:
-  case 10:
-    alert("Lo siento, no has acertado!!");
-    break;
-  case 9:
-    alert("PREMIO! Has acertado");
-    break;
-  default:
-    alert("Lo siento, este número está fuera del rango");
-    break;
+
+// while(numero != 9){
+//   alert("Lo siento, no has acertado");
+//   numero = parseInt(prompt("Sorteo!! Ingresar un número del 1 al 10. Tienes 3 oportunidades"));
+// }
+
+//   alert("Enhorabuena! Has acertado!")
+
+
+
+let numero = parseInt(prompt("Sorteo!! Ingresar un número del 1 al 10"));
+if(numero=="9"){
+    alert("Enhorabuena! Has acertado!");
+}else{
+    while(numero != 9){
+      alert("Lo siento, no has acertado");
+      numero = parseInt(prompt("Sorteo!! Ingresar un número del 1 al 10."));
+    }  
+    alert("Enhorabuena! Has acertado!");
 }
